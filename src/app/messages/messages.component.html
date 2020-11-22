@@ -1,1 +1,6 @@
-<p>messages works!</p>
+<div *ngIf="ms.messages.length">
+  <h2>Messages</h2>
+  <button class="clear" (click)="ms.clear()">clear</button>
+  <div *ngFor='let msg of ms.messages'>{{ msg }}</div>
+
+</div>
